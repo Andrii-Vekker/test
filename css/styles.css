@@ -3,6 +3,7 @@
   padding: 0;
 }
 .slider {
+  position: relative;
   padding: 13px;
   width: 926px;
   height: 350px;
@@ -139,4 +140,9 @@ input[name="r"] {
 }
 .review-list-item:not(:last-child) {
   margin-right: 10px;
+}
+.zapyata-svg {
+  position: absolute;
+  top: 32px;
+  left: 48px;
 }
