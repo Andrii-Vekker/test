@@ -20,17 +20,21 @@
   justify-content: center;
 }
 .bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: #d9d9d9;
   cursor: pointer;
+  transition: all 400ms linear;
 }
 .bar:not(:last-child) {
   margin-right: 18px;
 }
 .bar:hover {
-  background-color: #c7133e;
+  background-color: #fff;
 }
 .slides {
   width: 300%;
@@ -39,7 +43,7 @@
 }
 .slide {
   width: 33.33%;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 500ms linear;
 }
 .slide img {
   display: block;
@@ -47,6 +51,7 @@
 }
 input[name="r"] {
   position: absolute;
+  display: none;
   top: 70%;
   left: 50%;
   transform: translate(-70%, -50%);
@@ -65,4 +70,14 @@ input[name="r"] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.nav-icon {
+  opacity: 0;
+  transition: all 300ms linear;
+}
+.bar:hover .nav-icon {
+  opacity: 1;
+}
+.bar:checked .nav-icon {
+  opacity: 1;
 }
