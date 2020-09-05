@@ -19,40 +19,82 @@
     <title>test</title>
   </head>
   <body>
-    <section class="page-review container">
-      <div class="page-review-wrapper">
-        <img
-          class="review-photo"
-          srcset="
-            ./images/vekker-images/kudryanegr.jpg    1x,
-            ./images/vekker-images/kudryanegr@2x.jpg 2x
-          "
-          src="./images/vekker-images/kudryanegr.jpg"
-          alt=""
-        />
-        <p class="review-comment">
-          <span class="review-comment-span"
-            >Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-            ipsum primis in nibh vel risus.</span
-          >
-        </p>
-      </div>
-      <ul class="review-list">
-        <li class="review-list-item"></li>
-        <li class="review-list-item"></li>
-        <li class="review-list-item"></li>
-      </ul>
-      <p class="review-location" class="preview-name">Emily, Los Angeles</p>
-      <ul class="review-list-slider">
-        <li class="review-list-item-slider">
-          <svg class="review-svg" width="12px" height="12px">
-            <use href="./images/vekker-images/sprite.svg#icon-home"></use>
-          </svg>
-        </li>
-        <li class="review-list-item-slider"></li>
-        <li class="review-list-item-slider"></li>
-      </ul>
+    <section class="page-review review-container">
+      <form>
+        <div class="slider middle">
+          <div class="slides">
+            <input type="radio" name="r" id="r1" />
+            <input type="radio" name="r" id="r2" />
+            <input type="radio" name="r" id="r3" />
+            <div class="slide s1">
+              <img
+                class="slide-img"
+                srcset="
+                  ./pictures/images/vekker-images/kudryanegr.jpg 1x,
+                  ./pictures/images/vekker-images/kudryanegr.jpg 2x
+                "
+                src="./pictures/images/vekker-images/kudryanegr.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide s2">
+              <img
+                class="slide-img"
+                srcset="
+                  ./pictures/images/vekker-images/kudryanegr.jpg 1x,
+                  ./pictures/images/vekker-images/kudryanegr.jpg
+                "
+                src="./pictures/images/vekker-images/kudryanegr.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide s3">
+              <img
+                class="slide-img"
+                srcset="
+                  ./pictures/images/vekker-images/kudryanegr.jpg 1x,
+                  ./pictures/images/vekker-images/kudryanegr.jpg 2x
+                "
+                src="./pictures/images/vekker-images/kudryanegr.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <p class="review-comment">
+            <span class="review-comment-span"
+              >Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+              ipsum primis in nibh vel risus.</span
+            >
+          </p>
+          <ul class="review-list">
+            <li class="review-list-item"></li>
+            <li class="review-list-item"></li>
+            <li class="review-list-item"></li>
+          </ul>
+          <p class="review-location">Emily, Los Angeles</p>
+          <div class="navigation">
+            <label for="r1" class="bar"
+              ><img
+                class="nav-icon"
+                src="./pictures/images/vekker-images/home.svg"
+                alt=""
+            /></label>
+            <label for="r2" class="bar"
+              ><img
+                class="nav-icon"
+                src="./pictures/images/vekker-images/home.svg"
+                alt=""
+            /></label>
+            <label for="r3" class="bar"
+              ><img
+                class="nav-icon"
+                src="./pictures/images/vekker-images/home.svg"
+                alt=""
+            /></label>
+          </div>
+        </div>
+      </form>
     </section>
   </body>
 </html>
